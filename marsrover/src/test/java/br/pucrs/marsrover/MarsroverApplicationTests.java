@@ -37,5 +37,4 @@ public class MarsroverApplicationTests {
         assertEquals("Orientacao errada", retornoEsperado, rover2.move("MMRMMRMRRM"));
     }
 
-    
 }
