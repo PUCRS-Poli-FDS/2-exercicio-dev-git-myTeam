@@ -56,19 +56,19 @@ public class Rover {
         String pontoCardeal = "";
         switch (grau) {
             case 0:
-                pontoCardeal = "Norte";
+                pontoCardeal = "Norte\n";
                 break;
             case 90:
-                pontoCardeal = "Leste";
+                pontoCardeal = "Leste\n";
                 break;
             case 180:
-                pontoCardeal = "Sul";
+                pontoCardeal = "Sul\n";
                 break;
             case 270:
-                pontoCardeal = "Oeste";
+                pontoCardeal = "Oeste\n";
                 break;
             case 360:
-                pontoCardeal = "Norte";
+                pontoCardeal = "Norte\n";
                 break;
             default:
                 pontoCardeal = "Ponto inexistente";
