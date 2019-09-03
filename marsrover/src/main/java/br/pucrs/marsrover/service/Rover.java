@@ -19,7 +19,8 @@ public class Rover {
         System.out.print(this.x+" "+this.y+" "+getCardeais(graus));
     }
 
-    public void move(String orientacao) {
+    public String move(String orientacao) {
+        String retorno = "";
         for(char c: orientacao.toCharArray()) {
             switch(c) {
                 case 'L':
@@ -29,7 +30,8 @@ public class Rover {
                     } else {
                         graus -= 90;
                     }
-                    System.out.print(x+" "+y+" "+getCardeais(graus));
+//                    System.out.print(x+" "+y+" "+getCardeais(graus));
+                    retorno = x+" "+y+" "+getCardeais(graus);
                     break;
                 case 'R':
                     if(graus == 360) {
@@ -38,16 +40,20 @@ public class Rover {
                     } else {
                         graus = graus+90;
                     }
-                    System.out.print(x+" "+y+" "+getCardeais(graus));
+//                    System.out.print(x+" "+y+" "+getCardeais(graus));
+                    retorno = x+" "+y+" "+getCardeais(graus);
                     break;
                 case 'M':
                     y += 1;
-                    System.out.print(x+" "+y+" "+getCardeais(graus));
+//                    System.out.print(x+" "+y+" "+getCardeais(graus));
+                    retorno = x+" "+y+" "+getCardeais(graus);
                     break;
                 default:
-                    System.out.println("Orientação inválida!");
+//                    System.out.println("Orientação inválida!");
+                    retorno = "Orientação inválida!";
             }
         }
+        return retorno;
     }
 
     private String getCardeais(int grau) {
