@@ -30,7 +30,6 @@ public class Rover {
                     } else {
                         graus -= 90;
                     }
-//                    System.out.print(x+" "+y+" "+getCardeais(graus));
                     retorno = x+" "+y+" "+getCardeais(graus);
                     break;
                 case 'R':
@@ -40,16 +39,13 @@ public class Rover {
                     } else {
                         graus = graus+90;
                     }
-//                    System.out.print(x+" "+y+" "+getCardeais(graus));
                     retorno = x+" "+y+" "+getCardeais(graus);
                     break;
                 case 'M':
                     y += 1;
-//                    System.out.print(x+" "+y+" "+getCardeais(graus));
                     retorno = x+" "+y+" "+getCardeais(graus);
                     break;
                 default:
-//                    System.out.println("Orientação inválida!");
                     retorno = "Orientação inválida!";
             }
         }
@@ -60,22 +56,22 @@ public class Rover {
         String pontoCardeal = "";
         switch (grau) {
             case 0:
-                pontoCardeal = "Norte\n";
+                pontoCardeal = "Norte";
                 break;
             case 90:
-                pontoCardeal = "Leste\n";
+                pontoCardeal = "Leste";
                 break;
             case 180:
-                pontoCardeal = "Sul\n";
+                pontoCardeal = "Sul";
                 break;
             case 270:
-                pontoCardeal = "Oeste\n";
+                pontoCardeal = "Oeste";
                 break;
             case 360:
-                pontoCardeal = "Norte\n";
+                pontoCardeal = "Norte";
                 break;
             default:
-                pontoCardeal = "Ponto inexistente\n";
+                pontoCardeal = "Ponto inexistente";
                 break;
         }
         return pontoCardeal;

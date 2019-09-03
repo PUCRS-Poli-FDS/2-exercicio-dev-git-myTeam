@@ -24,16 +24,13 @@ public class MarsroverApplicationTests {
         rover2 = new Rover(0,0, "N");
         rover3 = new Rover(0,0, "N");
         rover4 = new Rover(0,0, "N");
-
-//        rover.posicao(4, 5);
-//        rover.move("LLLRM");
     }
 
     @Test
-    public void moverRoverTest() {
-        String retornoEsperado = "2 4 Sul";
+    public void testeMoverRover() {
+        String retornoEsperado = "2 4 Leste";
         rover1.posicao(2, 4);
-        assertEquals(retornoEsperado, rover1.move("LLL"));
+        assertEquals("Deu ruim", retornoEsperado, rover1.move("LLL"));
     }
 
     @Test
