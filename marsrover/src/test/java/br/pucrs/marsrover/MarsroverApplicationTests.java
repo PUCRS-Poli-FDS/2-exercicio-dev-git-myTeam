@@ -30,11 +30,12 @@ public class MarsroverApplicationTests {
     public void testeMoverRover() {
         String retornoEsperado = "2 4 Leste\n";
         rover1.posicao(2, 4);
-        assertEquals("Deu ruim", retornoEsperado, rover1.move("LLL"));
+        assertEquals("Orientacao errada", retornoEsperado, rover1.move("LLL"));
 
         retornoEsperado = "0 7 Norte\n";
         rover2.posicao(0, 1);
         assertEquals("Orientacao errada", retornoEsperado, rover2.move("MMRMMRMRRM"));
     }
 
+    
 }
